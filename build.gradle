@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'pro.diventa.tutorial'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+    compile group: 'com.typesafe.akka', name: 'akka-actor_2.12', version: '2.5.25'
+}
+
+test {
+    useJUnitPlatform()
+}
